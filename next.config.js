@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: [
+      'upload.wikimedia.org',
+      'images.contentstack.io',
+      'links.papareact.com',
+      'a0.muscache.com',
+    ],
+  },
+  env: {
+    mapbox_key:
+      'pk.eyJ1IjoicHJpdGkyNyIsImEiOiJjbDByMXo0ZW8wMGxkM2JxcDQxeTFhcDZhIn0.EO6NGurCqOVPGGMKCIbPhw',
+  },
+};
