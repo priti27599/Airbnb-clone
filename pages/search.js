@@ -5,7 +5,7 @@ import InfoCard from '../components/InfoCard';
 import { format } from 'date-fns/format';
 import Map from '../components/Map';
 
-function search({ searchResults }) {
+function Search({ searchResults }) {
   const router = useRouter();
   console.log(searchResults);
 
@@ -67,7 +67,7 @@ function search({ searchResults }) {
   );
 }
 
-export default search;
+export default Search;
 
 export async function getServerSideProps() {
   const searchResults = await fetch('https://links.papareact.com/isz').then(
